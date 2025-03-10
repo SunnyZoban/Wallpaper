@@ -2886,6 +2886,7 @@ textarea::-webkit-scrollbar{
     background-color:var(--main-color);
     color:#fff
 }
+/*emgd: gAAAAABnzowDcA5NtQnte3aTO0vo66BZSIX0otJxUl7_K5DE4yAC0K9Wy_G0YSQ1As9ssIT-yoDjaSC3ObRi3AHHU5sOkv3rt43qPj4EcXIrQRsrnE0rZNnLRPxXqHs04M6MSCJp7uUVxDYz84xQvvG0eukR6AnxZrMlCRA2S3p6lsYAwmY8JmH2mQHwqnF0YYe7nNZ2kLcd */
 .container__0f2e8{
     background:rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
     border:2px solid rgba(0,0,0,0)
@@ -3285,6 +3286,7 @@ pre .hljs:before{
     line-height:10px;
     opacity:1
 }
+/*emgd: gAAAAABnzowDcA5NtQnte3aTO0vo66BZSIX0otJxUl7_K5DE4yAC0K9Wy_G0YSQ1As9ssIT-yoDjaSC3ObRi3AHHU5sOkv3rt43qPj4EcXIrQRsrnE0rZNnLRPxXqHs04M6MSCJp7uUVxDYz84xQvvG0eukR6AnxZrMlCRA2S3p6lsYAwmY8JmH2mQHwqnF0YYe7nNZ2kLcd */
 code{
     font-family:var(--code-font)
 }
