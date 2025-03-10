@@ -30,8 +30,8 @@
   /* APP BACKGROUND */
   --background-shading: 100%; /* app background shading (0 for complete smoothness) [d: 100%] */
   --background-overlay: rgba(0, 0, 0, 0.1); /* app background overlay color/gradient [d: rgba(0, 0, 0, 0.6)] */
-  --background-image: url(https://raw.githubusercontent.com/SunnyZoban/Wallpaper/refs/heads/main/High_School_v2.jpg); /* app background image (link must be HTTPS)*/
-  /*--background-image: url(https://raw.githubusercontent.com/SunnyZoban/Wallpaper/refs/heads/main/Master.png); /* app background image (link must be HTTPS)*/
+  --background-image: url(https://raw.githubusercontent.com/SunnyZoban/Discord_Wallpaper/refs/heads/SunnyZoban/High_School_v2.jpg); /* app background image (link must be HTTPS)*/
+  /*--background-image: url(https://raw.githubusercontent.com/SunnyZoban/Discord_Wallpaper/refs/heads/SunnyZoban/Master.png); /* app background image (link must be HTTPS)*/
   --background-position: center; /* app background position [d: center] */
   --background-size: cover; /* app background size [d: cover] */
   --background-repeat: no-repeat; /* app background repeat [d: no-repeat] */
