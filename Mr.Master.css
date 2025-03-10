@@ -1,0 +1,102 @@
+/* CSS Mr.Master */
+@import url(https://raw.githubusercontent.com/SunnyZoban/Wallpaper/refs/heads/Wallpaper/Main.css);
+
+/* SETTINGS */
+:root {
+  /* ACCENT COLORS */
+  --main-color: rgba(225, 191, 49, 0.7); /* main accent color (hex, rgb or hsl) [d: #2780e6] */
+  --hover-color: rgba(225, 225, 0, 0.9); /* hover accent color (hex, rgb or hsl) [d: #1e63b3] */
+  --success-color: #43b581; /* success accent color (hex, rgb or hsl) [d: #43b581] */
+  --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [d: #982929] */
+  --url-color: var(--main-color); /* url links accent color (hex, rgb or hsl) [d: var(--main-color)] */
+  --focus-color: var(--main-color); /* focus accent color (hex, rgb or hsl) [d: var(--focus-primary)] */
+
+  /* STATUS COLORS */
+  --online-color: #43b581; /* online status color (hex, rgb or hsl) [d: #43b581] */
+  --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [d: #faa61a] */
+  --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [d: #982929] */
+  --streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [d: #593695] */
+  --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [d: #808080] */
+
+  /* GENERAL */
+  --main-font: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [d: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
+  --code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [d: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+  --text-normal: rgb(220, 225, 225); /* color of d discord text */
+  --text-muted: rgb(114, 118, 125); /* color of d discord muted text (e.g.text found in input fields before typing).*/
+  --channels-width: 220px; /* channel list width (240px for Discord d) [d: 220px] */
+  --members-width: 240px; /* member list width [d: 240px] */
+  --server-unread: var(--main-color); /* Color of the icon for servers with unread messages [d: var(--main-color)] */
+
+  /* APP BACKGROUND */
+  --background-shading: 100%; /* app background shading (0 for complete smoothness) [d: 100%] */
+  --background-overlay: rgba(0, 0, 0, 0.1); /* app background overlay color/gradient [d: rgba(0, 0, 0, 0.6)] */
+  --background-image: url(https://raw.githubusercontent.com/SunnyZoban/Wallpaper/refs/heads/main/High_School_v2.jpg); /* app background image (link must be HTTPS)*/
+  /*--background-image: url(https://raw.githubusercontent.com/SunnyZoban/Wallpaper/refs/heads/main/Master.png); /* app background image (link must be HTTPS)*/
+  --background-position: center; /* app background position [d: center] */
+  --background-size: cover; /* app background size [d: cover] */
+  --background-repeat: no-repeat; /* app background repeat [d: no-repeat] */
+  --background-attachment: fixed; /* app background attachment [d: fixed] */
+  --background-brightness: 100%; /* app background brightness (< 100% for darken, > 100% for lighten) [d: 100%] */
+  --background-contrast: 100%; /* app background contrast [d: 100%] */
+  --background-saturation: 100%; /* app background saturation [d: 100%] */
+  --background-invert: 0%; /* app background invert (0 - 100%)  [d: 0%] */
+  --background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [d: 0%] */
+  --background-sepia: 0%; /* app background sepia (0 - 100%) [d: 0%] */
+  --background-blur: 1px; /* app background blur [d: 0px] */
+
+  /* CHANNEL TEXT COLORS */
+  --channel-color: rgba(255, 255, 255, 1); /* channel text color [d: rgba(255, 255, 255, 0.3)] */
+  --channel-hovered: rgba(255, 255, 255, 0.9); /* hovered channel text color [d: rgba(255, 255, 255, 0.7)] */
+  --channel-unread: var(--main-color); /* unread channel textcolor [d: var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
+  --channel-selected: #ffffff; /* selected channel text color [d: #ffffff] */
+  --channel-muted: rgba(255, 255, 255, 0.5); /* muted channel text color [d: rgba(255,255,255,0.1)] */
+
+  /* MODAL BACKDROP */
+  --backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [d: rgba(0, 0, 0, 0.8)] */
+  --backdrop-image: var(--background-image); /* modal backdrop image (link must be HTTPS) [d: var(--background-image)] */
+  --backdrop-position: var(--background-position); /* modal backdrop position [d: var(--background-position)] */
+  --backdrop-size: var(--background-size); /* modal backdrop size [d: var(--background-size)] */
+  --backdrop-repeat: var(--background-repeat); /* modal backdrop repeat [d: var(--background-repeat)] */
+  --backdrop-attachment: var(--background-attachment); /* modal backdrop attachment [d: var(--background-attachment)] */
+  --backdrop-brightness: var(--background-brightness); /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [d: var(--background-brightness)] */
+  --backdrop-contrast: var(--background-contrast); /* modal backdrop contrast [d: var(--background-contrast)] */
+  --backdrop-saturation: var(--background-saturation); /* modal backdrop saturation [d: var(--background-saturation)] */
+  --backdrop-invert: var(--background-invert); /* modal backdrop invert (0 - 100%)  [d: var(--background-invert)] */
+  --backdrop-grayscale: var(--background-grayscale); /* modal backdrop grayscale ( 0 - 100%) [d: var(--background-grayscale)] */
+  --backdrop-sepia: var(--background-sepia); /* modal backdrop sepia (0 - 100%) [d: var(--background-sepia)] */
+  --backdrop-blur: var(--background-blur); /* modal backdrop blur [d: var(--background-blur)] */
+
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: var(--background-image); /* app background image (link must be HTTPS) [d: var(--background-image)] */
+  --user-popout-position: var(--background-position); /* user popout background position [d: var(--background-position)] */
+  --user-popout-size: var(--background-size); /* user popout background size [d: var(--background-size)] */
+  --user-popout-repeat: var(--background-repeat); /* user popout background repeat [d: var(--background-repeat)] */
+  --user-popout-attachment: var(--background-attachment); /* user popout background attachment [d: var(--background-attachment)] */
+  --user-popout-brightness: var(--background-brightness); /* user popout background brightness (< 100% darken, > 100% lighten) [d: var(--background-brightness)] */
+  --user-popout-contrast: var(--background-contrast); /* user popout background contrast [d: var(--background-contrast)] */
+  --user-popout-saturation: var(--background-saturation); /* user popout background saturation [d: var(--background-saturation)] */
+  --user-popout-invert: var(--background-invert); /* user popout background invert (0 - 100%) [d: var(--background-invert)] */
+  --user-popout-grayscale: var(--background-grayscale); /* user popout background grayscale (0 - 100%) [d: var(--background-grayscale)] */
+  --user-popout-sepia: var(--background-sepia); /* user popout background sepia (0 - 100%) [d: var(--background-sepia)] */
+  --user-popout-blur: calc(var(--background-blur) + 3px); /* user popout background blur [d: calc(var(--background-blur) + 3px)] */
+  --user-popout-overlay: rgba(0, 0, 0, 0.6); /* user popout overlay color [d: rgba(0, 0, 0, .6)] */
+
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: var(--background-image); /* app background image (link must be HTTPS) [d: var(--background-image)] */
+  --user-modal-position: var(--background-position); /* user modal background position [d: var(--background-position)] */
+  --user-modal-size: var(--background-size); /* user modal background size [d: var(--background-size)] */
+  --user-modal-repeat: var(--background-repeat); /* user modal background repeat [d: var(--background-repeat)] */
+  --user-modal-attachment: var(--background-attachment); /* user modal background attachment [d: var(--background-attachment)] */
+  --user-modal-brightness: var(--background-brightness); /* user modal background brightness (< 100% for darken, > 100% for lighten) [d: var(--background-brightness)] */
+  --user-modal-contrast: var(--background-contrast); /* user modal background contrast [d: var(--background-contrast)] */
+  --user-modal-saturation: var(--background-saturation); /* user modal background saturation [d: var(--background-saturation)] */
+  --user-modal-invert: var(--background-invert); /* user modal background invert (0 - 100%) [d: var(--background-invert)] */
+  --user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [d: var(--background-grayscale)] */
+  --user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [d: var(--background-sepia)] */
+  --user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [d: calc(var(--background-blur) + 3px)] */
+
+  /* THEME BD COLORS */
+  --bd-blue: var(--main-color); /* betterdiscord main color [d: var(--main-color)] */
+  --bd-blue-hover: var(--hover-color); /* betterdiscord hover color [d: var(--hover-color)] */
+  --bd-blue-active: var(--hover-color); /* betterdiscord active color [d: var(--hover-color)] */
+}
